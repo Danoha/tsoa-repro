@@ -1,0 +1,9 @@
+{
+  "controllerPathGlobs": ["src/*"],
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "spec": {
+    "outputDirectory": "out",
+    "specFileBaseName": "openapi",
+    "specVersion": 3
+  }
+}

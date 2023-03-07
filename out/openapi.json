@@ -1,0 +1,60 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"TestResult": {
+				"properties": {
+					"test": {
+						"properties": {
+							"createdAt": {
+								"type": "string",
+								"format": "date-time"
+							}
+						},
+						"type": "object"
+					}
+				},
+				"required": [
+					"test"
+				],
+				"type": "object"
+			}
+		},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "",
+		"contact": {}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/": {
+			"get": {
+				"operationId": "Test",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/TestResult"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}
